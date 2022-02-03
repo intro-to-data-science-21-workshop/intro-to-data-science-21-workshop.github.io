@@ -24,8 +24,13 @@
   $('body').scrollspy({
     target: '#mainNav',
     offset: 56
+<<<<<<< HEAD
   
 });
+=======
+  });
+
+>>>>>>> parent of e51fdd1 (quick test)
   // Collapse Navbar
   var navbarCollapse = function() {
     if ($("#mainNav").offset().top > 100) {
