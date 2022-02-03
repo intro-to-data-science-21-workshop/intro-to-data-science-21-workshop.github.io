@@ -836,6 +836,7 @@ ul.social-buttons li a {
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
   background-color: #fed136;
 }
+<<<<<<< HEAD
 
 * {
   box-sizing: border-box;
@@ -912,3 +913,5 @@ h1 {
   background-color: #666;
    color: white;
 }
+=======
+>>>>>>> parent of e51fdd1 (quick test)
