@@ -87,6 +87,82 @@
     }
 
   </style>
+
+ <style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+</style> 
 </head>
 
 <body id="page-top">
@@ -735,18 +811,6 @@
           </a>
         </div>
         <div class="col-md-3 col-sm-3 portfolio-item">
-          <a class="portfolio-link" href="https://vimeo.com/641454391/5c494fbdad" target="_blank">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                  <h4>Interactive maps with leaflet
-                  </h4>
-                  <p style="font-size:smaller;" class="text-muted">Florian Winkler<br>Jiayu Yang</p>
-              </div>
-            </div>
-            <img class="img-fluid img-portfolio" src="img/sessions/eierdans.jpeg" alt="">
-          </a>
-        </div>
-        <div class="col-md-3 col-sm-3 portfolio-item">
           <a class="portfolio-link" href="https://vimeo.com/641452290/b086b99c7c" target="_blank">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
@@ -849,6 +913,362 @@
       </div>
     </div>
   </section>
+
+<section>
+<h2>SESSIONS</h2>
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('geo')"> Geo Data</button>
+  <button class="btn" onclick="filterSelection('maps')"> Maps</button>
+  <button class="btn" onclick="filterSelection('text')"> Text Data</button>
+  <button class="btn" onclick="filterSelection('web')"> Web</button>
+  <button class="btn" onclick="filterSelection('data')"> Data Wrangling</button>
+   <button class="btn" onclick="filterSelection('graphs')"> Graphs</button>
+    <button class="btn" onclick="filterSelection('model')"> Modeling</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column geo">
+    <div class="content">
+      <a class="portfolio-link" href="https://vimeo.com/641455163/05b7b3edce" target="_blank">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                  <h4>Geocoding with sf
+                  </h4>
+                  <p style="font-size:smaller;" class="text-muted">Andrew Wells<br>Fernanda Candido Gomes</p>
+              </div>
+            </div>
+            <img class="img-fluid img-portfolio" src="img/sessions/bakker.jpeg" alt="">
+          </a>
+        </div>
+  </div>
+  <div class="column geo">
+    <div class="content">
+      <a class="portfolio-link" href="https://vimeo.com/641454912/43c6c67361" target="_blank">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                  <h4>CRS with sf
+                  </h4>
+                  <p style="font-size:smaller;" class="text-muted">Lisa Pramann<br>Caitlin Sarro</p>
+              </div>
+            </div>
+            <img class="img-fluid img-portfolio" src="img/sessions/bruiloft.jpeg" alt="">
+          </a>
+        </div>
+  </div>
+
+  <div class="column geo">
+    <div class="content">
+      <a class="portfolio-link" href="https://vimeo.com/641455082/118514256f" target="_blank">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                  <h4>Geocoding with sf
+                  </h4>
+                  <p style="font-size:smaller;" class="text-muted">Carlo Greß<br>Johannes Halkenhaeusser</p>
+              </div>
+            </div>
+            <img class="img-fluid img-portfolio" src="img/sessions/dirck.jpeg" alt="">
+          </a>
+        </div>
+  </div>
+
+
+    <div class="column geo">
+    <div class="content">
+        <a class="portfolio-link" href="https://vimeo.com/641455008/6fdbee2973" target="_blank">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                  <h4>CRS with sf
+                  </h4>
+                  <p style="font-size:smaller;" class="text-muted">Marco Schildt<br>Hannah Schweren</p>
+              </div>
+            </div>
+            <img class="img-fluid img-portfolio" src="img/sessions/bruiloft.jpeg" alt="">
+          </a>
+        </div>
+  </div>
+
+
+  <div class="column maps">
+  <div class="content">
+        <a class="portfolio-link" href="https://vimeo.com/641454391/5c494fbdad" target="_blank">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                  <h4>Interactive maps with leaflet
+                  </h4>
+                  <p style="font-size:smaller;" class="text-muted">Florian Winkler<br>Jiay Yang</p>
+              </div>
+            </div>
+            <img class="img-fluid img-portfolio" src="img/sessions/globe-man.jpeg" alt="">
+          </a>
+        </div>
+  </div>
+
+
+
+
+  <div class="column text">
+  <div class="content">
+        <a class="portfolio-link" href="https://vimeo.com/641452290/b086b99c7c" target="_blank">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                  <h4>String manipulation with stringr
+                  </h4>
+                  <p style="font-size:smaller;" class="text-muted">Elena García Mañes<br>Himanshi Gautam</p>
+              </div>
+            </div>
+            <img class="img-fluid img-portfolio" src="img/sessions/riviergezicht.jpeg" alt="">
+          </a>
+        </div>
+  </div>
+
+  <div class="column text">
+  <div class="content">
+        <a class="portfolio-link" href="https://vimeo.com/641452154/aed948a030" target="_blank">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                  <h4>Regular expressions with stringr
+                  </h4>
+                  <p style="font-size:smaller;" class="text-muted">Lukas Warode<br>Anna-Lisa Wirth</p>
+              </div>
+            </div>
+            <img class="img-fluid img-portfolio" src="img/sessions/het-oordeel.jpeg" alt="">
+          </a>
+        </div>
+  </div>
+
+  <div class="column text">
+  <div class="content">
+        <a class="portfolio-link" href="https://vimeo.com/641455397/21f4a07eee" target="_blank">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                  <h4>String manipulation with stringr
+                  </h4>
+                  <p style="font-size:smaller;" class="text-muted">Max Eckert<br>Kai Foerster</p>
+              </div>
+            </div>
+            <img class="img-fluid img-portfolio" src="img/sessions/groentemarkt.jpeg" alt="">
+          </a>
+        </div>
+  </div>
+
+  <div class="column text">
+  <div class="content">
+         <a class="portfolio-link" href="https://vimeo.com/641454823/8eb04235fd" target="_blank">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                  <h4>Text analysis with quanteda
+                  </h4>
+                  <p style="font-size:smaller;" class="text-muted">Laura Menicacci<br>Dinah Rabe</p>
+              </div>
+            </div>
+            <img class="img-fluid img-portfolio" src="img/sessions/groentemarkt.jpeg" alt="">
+          </a>
+        </div>
+  </div>
+
+  <div class="column text">
+  <div class="content">
+        <a class="portfolio-link" href="https://vimeo.com/641454656/2411000d89" target="_blank">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                  <h4>Text analysis with quanteda
+                  </h4>
+                  <p style="font-size:smaller;" class="text-muted">Kathryn Malchow<br>Federico Mammana</p>
+              </div>
+            </div>
+            <img class="img-fluid img-portfolio" src="img/sessions/dirck.jpeg" alt="">
+          </a>
+        </div>
+  </div>
+
+    <div class="column text">
+    <div class="content">
+          <a class="portfolio-link" href="https://vimeo.com/641452075/fff3e12a99" target="_blank">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                  <h4>Regular expressions with stringr
+                  </h4>
+                  <p style="font-size:smaller;" class="text-muted">Anna Clara Deniz<br>Angela Duarte Pardo</p>
+              </div>
+            </div>
+            <img class="img-fluid img-portfolio" src="img/sessions/writing-lady.jpeg" alt="">
+          </a>
+        </div>
+  </div>
+
+    <div class="column web">
+    <div class="content">
+    <a class="portfolio-link" href="https://vimeo.com/641451489/f717f1edd0" target="_blank">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                  <h4>Creating web APIs with plumber
+                  </h4>
+                  <p style="font-size:smaller;" class="text-muted">Helena Bakic<br>Katalin Bayer</p>
+              </div>
+            </div>
+            <img class="img-fluid img-portfolio" src="img/sessions/blijde.jpeg" alt="">
+          </a>
+        </div>
+  </div>    
+
+    <div class="column web">
+    <div class="content">
+    <a class="portfolio-link" href="https://vimeo.com/641451769/1f86328f07" target="_blank">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                  <h4>Creating web APIs with plumber
+                  </h4>
+                  <p style="font-size:smaller;" class="text-muted">Hyebin Hong<br>Guilherme Lacerda</p>
+              </div>
+            </div>
+            <img class="img-fluid img-portfolio" src="img/sessions/blijde.jpeg" alt="">
+          </a>
+        </div>
+  </div> 
+
+    <div class="column web">
+    <div class="content">
+    <a class="portfolio-link" href="https://vimeo.com/641451105/6572a31f18" target="_blank">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                  <h4>Dynamic web scraping with RSelenium
+                  </h4>
+                  <p style="font-size:smaller;" class="text-muted">Reed Garvin<br>Francesca Giacco</p>
+              </div>
+            </div>
+            <img class="img-fluid img-portfolio" src="img/sessions/armor.jpeg" alt="">
+          </a>
+        </div>
+  </div> 
+
+    <div class="column web">
+    <div class="content">
+    <a class="portfolio-link" href="https://vimeo.com/641450593/30ad4071b4" target="_blank">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                  <h4>Connecting to web APIs
+                  </h4>
+                  <p style="font-size:smaller;" class="text-muted">Caroline Cavallari<br>Jose de los Heros</p>
+              </div>
+            </div>
+            <img class="img-fluid img-portfolio" src="img/sessions/water-well.jpeg" alt="">
+          </a>
+        </div>
+  </div> 
+
+    <div class="column web">
+    <div class="content">
+    <a class="portfolio-link" href="https://vimeo.com/641451354/f48ddcee06" target="_blank">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                  <h4>Dynamic web scraping with RSelenium
+                  </h4>
+                  <p style="font-size:smaller;" class="text-muted">Sofia Lai<br>Marina Luna</p>
+              </div>
+            </div>
+            <img class="img-fluid img-portfolio" src="img/sessions/christus.jpeg" alt="">
+          </a>
+        </div>
+  </div> 
+
+  <div class="column data">
+  <div class="content">
+    <a class="portfolio-link" href="https://vimeo.com/641451354/f48ddcee06" target="_blank">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                  <h4>Wrangling data at scale with data.table
+                  </h4>
+                  <p style="font-size:smaller;" class="text-muted">Julia Ellingwood<br>Renato Franco</p>
+              </div>
+            </div>
+            <img class="img-fluid img-portfolio" src="img/sessions/dinner.jpeg" alt="">
+          </a>
+        </div>
+  </div> 
+
+
+  <div class="column data">
+  <div class="content">
+    <a class="portfolio-link" href="https://vimeo.com/641452816/a13c6bcde5" target="_blank">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                  <h4>Categorical variables with forcats
+                  </h4>
+                  <p style="font-size:smaller;" class="text-muted">Janine De Vera<br>Victor Möslein</p>
+              </div>
+            </div>
+            <img class="img-fluid img-portfolio" src="img/sessions/verzoeking.jpeg" alt="">
+          </a>
+        </div>
+  </div> 
+
+  <div class="column data">
+  <div class="content">
+    <a class="portfolio-link" href="https://vimeo.com/641450295/4c002a3ec0" target="_blank">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                  <h4>Working with JSON and jsonlite
+                  </h4>
+                  <p style="font-size:smaller;" class="text-muted">Milan Schröder<br>Sangeeth Selvaraju</p>
+              </div>
+            </div>
+            <img class="img-fluid img-portfolio" src="img/sessions/armor.jpeg" alt="">
+          </a>
+        </div>
+  </div> 
+
+  
+  <div class="column data">
+  <div class="content">
+    <a class="portfolio-link" href="https://vimeo.com/641450138/a3afd8ba58" target="_blank">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                  <h4>Working with JSON and jsonlite
+                  </h4>
+                  <p style="font-size:smaller;" class="text-muted">Gabriel da Silva Zech<br>Francesco Danovi</p>
+              </div>
+            </div>
+            <img class="img-fluid img-portfolio" src="img/sessions/eierdans.jpeg" alt="">
+          </a>
+        </div>
+  </div> 
+
+
+  <div class="column graphs">
+  <div class="content">
+    <a class="portfolio-link" href="https://vimeo.com/641454552/3724dfb535" target="_blank">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                  <h4>Interactive graphics with plotly
+                  </h4>
+                  <p style="font-size:smaller;" class="text-muted">Julian Kath<br>Steven Kerr</p>
+              </div>
+            </div>
+            <img class="img-fluid img-portfolio" src="img/sessions/dinner.jpeg" alt="">
+          </a>
+        </div>
+  </div> 
+
+  <div class="column models">
+  <div class="content">
+    <a class="portfolio-link" href="https://vimeo.com/641455253/04c9e59119" target="_blank">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                  <h4>Tidy modeling
+                  </h4>
+                  <p style="font-size:smaller;" class="text-muted">Santiago Sordo Ruz<br>Benedikt Ströbl</p>
+              </div>
+            </div>
+            <img class="img-fluid img-portfolio" src="img/sessions/armor.jpeg" alt="">
+          </a>
+        </div>
+  </div> 
+
+<!-- END GRID -->
+</div>
+</section>
 
 
   <!-- Participants -->
@@ -1143,6 +1563,52 @@
   <!-- Custom scripts for this template -->
   <script src="js/agency.min.js"></script>
 
+  <!-- Portfolio Filter JavaScript -->
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
 </body>
 
 </html>
