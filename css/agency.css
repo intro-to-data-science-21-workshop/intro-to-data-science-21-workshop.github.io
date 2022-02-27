@@ -149,6 +149,7 @@ img::-moz-selection {
 .btn-primary {
   background-color: #fed136;
   border-color: #fed136;
+  color: black;
 }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
